@@ -1,0 +1,324 @@
+<app-navbar></app-navbar>
+
+<div class="container app">
+  <!-- start fomr -->
+  <form>
+
+    <!-- first row -->
+    <div class="row">
+      <div class="col-sm-10">
+        <h1 class="text-center">Admin employees</h1>
+      </div>
+
+      <div class="col-sm-2">
+        <img width="50"
+             src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo="
+        />
+      </div>
+    </div>
+    <!-- final first row -->
+    <!-- third row -->
+    <div class="form-row">
+      <h3>Create employee</h3>
+    </div>
+    <!--end third row -->
+    <!-- second row -->
+    <div class="form-row">
+
+
+      <div class="form-group col-md-2">
+        <label for="id">Id</label>
+        <input type="number"
+               class="form-control"
+               id="id"
+               name="id"
+               [(ngModel)]="model.id"
+               placeholder="Employee Id">
+      </div>
+
+
+      <div class="form-group col-md-4">
+        <label for="name">Name</label>
+        <input type="text"
+               class="form-control"
+               id="name"
+               name="name"
+               [(ngModel)]="model.name"
+               placeholder="Employee name">
+      </div>
+
+      <div class="form-group col-md-2">
+        <label for="company">Company</label>
+        <input type="company"
+               class="form-control"
+               id="company"
+               name="company"
+               [(ngModel)]="model.company"
+               placeholder="Enter company">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="age">Age</label>
+        <input type="text"
+               class="form-control"
+               id="age"
+               name="age"
+               [(ngModel)]="model.age"
+               placeholder="Employee age">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="birthday">Birthday</label>
+        <input type="text"
+               class="form-control"
+               id="birthday"
+               name="birthday"
+               [(ngModel)]="model.birthday"
+               placeholder="Employee birthday">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="favoriteColor">Favorite Color</label>
+        <input type="text"
+               class="form-control"
+               id="favoriteColor"
+               name="favoriteColor"
+               [(ngModel)]="model.favoriteColor"
+               placeholder="Employee favoriteColor">
+      </div>
+
+      <div class="form-group col-md-4">
+        <label for="project">Project</label>
+        <input type="text"
+               class="form-control"
+               id="project"
+               name="project"
+               [(ngModel)]="model.project"
+               placeholder="Assign a project">
+      </div>
+
+    </div>
+    <!--end second row -->
+
+    <!-- third row -->
+    <div class="form-row">
+      <button type="submit"
+              href="#"
+              class="btn btn-primary"
+              (click)="addEmployee()">Save data</button>
+    </div><br>
+    <!--end third row -->
+
+  </form>
+  <!-- end form -->
+
+
+  <div class="row">
+    <div class="col-sm-12">
+
+      <h3>Show Employees: </h3>
+
+      <div class="col-sm-4">
+        <div class="alert alert-success alert-dismissable"
+             *ngIf="msg">
+          <a routerLink="/employee"
+             class="close"
+             (click)="closeAlert()">&times;
+                
+              </a> {{msg}}
+        </div>
+      </div>
+
+      <table class="table table-bordered"
+             style="color: white">
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Age</th>
+            <th>Birthday</th>
+            <th>Favorit Color</th>
+            <th>Project assigned</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let employee of employees; let i = index">
+            <td>{{employee.id}}</td>
+            <td>{{employee.name}}</td>
+            <td>{{employee.company}}</td>
+            <td>{{employee.age}}</td>
+            <td>{{employee.birthday}}</td>
+            <td>{{employee.favoriteColor}}</td>
+            <td>{{employee.project}}</td>
+
+            <td>
+              <button type="button"
+                      (click)="editEmployee(i)"
+                      class="btn btn-info btn-lg "
+                      data-toggle="modal"
+                      data-target="#myModal">Edit</button> &nbsp;
+              <a (click)="deleteEmployee(i)"
+                 class="btn btn-danger"
+                 style="margin-top: 5px; width: 70px;">
+                        Delete
+                      </a>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+  <!--end container -->
+  <!-- role="dialog" style="overflow-y: scroll; display: block;" -->
+  <!-- modal -->
+  <div class="modal fade in"
+       role="dialog"
+       id="myModal"
+       role="dialog">
+
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content"
+           style="margin-top: 150px;">
+
+        <!-- modal header -->
+        <div class="modal-header">
+          <h4 class="modal-title">Edit Employee</h4>
+
+          <button type="button"
+                  class="close"
+                  data-dismiss="modal">&times;</button>
+        </div>
+
+        <!-- modal body -->
+        <div class="modal-body">
+
+          <!-- data to modify -->
+          <form>
+
+
+
+            <!-- second row -->
+            <div class="form-row">
+
+              <div class="form-group col-md-4">
+                <label for="id">Id</label>
+                <input type="text"
+                       class="form-control"
+                       id="id"
+                       name="id"
+                       [(ngModel)]="model2.id"
+                       placeholder="id">
+              </div>
+
+              <div class="form-group col-md-4">
+                <label for="name">Name</label>
+                <input type="text"
+                       class="form-control"
+                       id="name"
+                       name="name"
+                       [(ngModel)]="model2.name"
+                       placeholder="Project name">
+              </div>
+
+
+              <div class="form-group col-md-4">
+                <label for="company">Company</label>
+                <input type="text"
+                       class="form-control"
+                       id="company"
+                       name="company"
+                       [(ngModel)]="model2.company"
+                       placeholder="Company">
+              </div>
+
+
+              <div class="form-group col-md-4">
+                <label for="age">Age</label>
+                <input type="text"
+                       class="form-control"
+                       id="age"
+                       name="age"
+                       [(ngModel)]="model2.age"
+                       placeholder="age">
+              </div>
+
+
+              <div class="form-group col-md-4">
+                <label for="birthday">Birthday</label>
+                <input type="text"
+                       class="form-control"
+                       id="birthday"
+                       name="birthday"
+                       [(ngModel)]="model2.birthday"
+                       placeholder="abirthdayge">
+              </div>
+
+
+              <div class="form-group col-md-4">
+                <label for="favoriteColor">Favorite color</label>
+                <input type="text"
+                       class="form-control"
+                       id="favoriteColor"
+                       name="favoriteColor"
+                       [(ngModel)]="model2.favoriteColor"
+                       placeholder="abirthdayge">
+              </div>
+
+
+              <div class="form-group col-md-4">
+                <label for="project">Assigned project</label>
+                <input type="text"
+                       class="form-control"
+                       id="project"
+                       name="project"
+                       [(ngModel)]="model2.project"
+                       placeholder="Assign project">
+              </div>
+
+
+            </div>
+            <!--end second row -->
+
+            <!-- third row -->
+            <div class="form-row">
+              <button type="submit"
+                      (click)="updateEmployee()"
+                      href="#"
+                      class="btn btn-primary">Update data</button>
+            </div><br>
+            <!--end third row -->
+
+          </form>
+          <!-- end form -->
+
+        </div>
+
+        <!-- modal footer -->
+        <div class="modal-footer">
+
+          <!-- first row -->
+          <div class="row">
+
+            <div class="col-sm-2">
+              <img width="50"
+                   src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4xLjAsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeD0iMHB4IiB5PSIwcHgiDQoJIHZpZXdCb3g9IjAgMCAyNTAgMjUwIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCAyNTAgMjUwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojREQwMDMxO30NCgkuc3Qxe2ZpbGw6I0MzMDAyRjt9DQoJLnN0MntmaWxsOiNGRkZGRkY7fQ0KPC9zdHlsZT4NCjxnPg0KCTxwb2x5Z29uIGNsYXNzPSJzdDAiIHBvaW50cz0iMTI1LDMwIDEyNSwzMCAxMjUsMzAgMzEuOSw2My4yIDQ2LjEsMTg2LjMgMTI1LDIzMCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAJIi8+DQoJPHBvbHlnb24gY2xhc3M9InN0MSIgcG9pbnRzPSIxMjUsMzAgMTI1LDUyLjIgMTI1LDUyLjEgMTI1LDE1My40IDEyNSwxNTMuNCAxMjUsMjMwIDEyNSwyMzAgMjAzLjksMTg2LjMgMjE4LjEsNjMuMiAxMjUsMzAgCSIvPg0KCTxwYXRoIGNsYXNzPSJzdDIiIGQ9Ik0xMjUsNTIuMUw2Ni44LDE4Mi42aDBoMjEuN2gwbDExLjctMjkuMmg0OS40bDExLjcsMjkuMmgwaDIxLjdoMEwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMUwxMjUsNTIuMQ0KCQlMMTI1LDUyLjF6IE0xNDIsMTM1LjRIMTA4bDE3LTQwLjlMMTQyLDEzNS40eiIvPg0KPC9nPg0KPC9zdmc+DQo="
+              />
+            </div>
+          </div>
+          <!-- final first row -->
+          <button type="button"
+                  class="btn btn-default"
+                  data-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
